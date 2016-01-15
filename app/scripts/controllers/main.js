@@ -8,10 +8,11 @@
  * Controller of the todoApp
  */
 angular.module('todoApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+  .controller('MainCtrl', function ($scope) {
+    $scope.todos = [
+      'Generate Scaffold',
+      'Modify App',
+      'Commit',
+      'Push'
     ];
   });
