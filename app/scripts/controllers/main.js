@@ -19,5 +19,9 @@ angular.module('todoApp')
     $scope.addToDo = function() {
       $scope.todos.push($scope.todo);
       $scope.todo = '';
+    };
+    
+    $scope.removeToDo = function(index) {
+      $scope.todos.splice(index,1);
     }
   });
