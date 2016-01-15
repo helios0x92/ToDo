@@ -15,4 +15,9 @@ angular.module('todoApp')
       'Commit',
       'Push'
     ];
+    
+    $scope.addToDo = function() {
+      $scope.todos.push($scope.todo);
+      $scope.todo = '';
+    }
   });
