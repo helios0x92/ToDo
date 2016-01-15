@@ -9,12 +9,7 @@
  */
 angular.module('todoApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.todos = [
-      'Generate Scaffold',
-      'Modify App',
-      'Commit',
-      'Push'
-    ];
+    $scope.todos = [];
     
     $scope.addToDo = function() {
       $scope.todos.push($scope.todo);
